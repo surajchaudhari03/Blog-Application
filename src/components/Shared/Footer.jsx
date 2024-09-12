@@ -41,7 +41,7 @@ const Footer = () => {
                 ))}
             </div>
             <p className="text-gray-500 text-sm">
-                Copyright ©2024 All rights reserved | made with <i className="fas fa-heart text-gray-500"></i> by <a href="#" className="text-blue-400 hover:text-blue-200">theprogrammer86</a>
+                Copyright ©2024 All rights reserved | made with <i className="fas fa-heart text-gray-500"></i> by <a href="https://github.com/theprogramer86" className="text-blue-400 hover:text-blue-200">theprogrammer86</a>
             </p>
         </footer>
     );
