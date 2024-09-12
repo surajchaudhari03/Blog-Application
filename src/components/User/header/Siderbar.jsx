@@ -1,15 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Siderbar({ categories, sidebarOpen, setSidebarOpen }) {
     const sidebarRef = useRef(null);
     const navigate = useNavigate();
 
-    const handleClickOutside = (event) => {
+    const handleClickOutside = useCallback((event) => {
         if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
             setSidebarOpen(false);
         }
-    };
+    }, [sidebarRef, setSidebarOpen]);
 
     useEffect(() => {
         if (sidebarOpen) {
@@ -21,7 +21,7 @@ function Siderbar({ categories, sidebarOpen, setSidebarOpen }) {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [sidebarOpen]);
+    }, [sidebarOpen, handleClickOutside]);
 
     const handleHomeClick = () => {
         setSidebarOpen(false);
