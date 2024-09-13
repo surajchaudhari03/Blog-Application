@@ -19,19 +19,31 @@ const AdminHeader = () => {
                     <Link to='/admin'><img aria-hidden="true" alt="logo" src={BlogLogo} className="h-10 w-10" /></Link>
                 </div>
                 <div className="hidden md:flex">
-                    <a href="/admin/blogs" className={styles.links}>
-                        Manage Blogs
-                    </a>
-                    <a href="/admin/categories" className={styles.links}>
-                        Manage Categories
-                    </a>
-                    <a href="/admin/queries" className={styles.links}>
-                        Manage Queries
-                    </a>
-                    <a href="/admin/profile" className={`${styles.links} flex align-middle`}>
-                        Profile
-                        <img src={ProfileLogo} alt="logo" className='w-8 h-8 rounded-full ml-1' />
-                    </a>
+                    <Link to={`/admin/blogs`}>
+                        <span className={styles.links}>
+                            Manage Blogs
+                        </span>
+                    </Link>
+                    <Link to={`/admin/categories`}>
+                        <span className={styles.links}>
+                            Manage Categories
+                        </span>
+                    </Link>
+                    <Link to={`/admin/queries`}>
+                        <span className={styles.links}>
+                            Manage Queries
+                        </span>
+                    </Link>
+                    <Link to={`/admin/profile`}>
+                        <span className={`${styles.links} flex align-middle`}>
+                            Profile
+                            <img src={ProfileLogo} alt="logo" className='w-8 h-8 rounded-full ml-1' />
+                        </span>
+                    </Link>
+
+
+
+
                 </div>
                 <div className="md:hidden">
                     <button onClick={() => setMenuOpen(!menuOpen)}>
