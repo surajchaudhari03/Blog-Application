@@ -57,6 +57,8 @@ const BlogEditPage = () => {
     fetchBlogAndCategories();
   }, [blogId]);
 
+  console.log(blog);  // added because netlify giving error as " 'blog' is assigned a value but never used" 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
