@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { databases } from '../../services/AppwriteService';
 import conf from '../../services/conf';
 import DOMPurify from 'dompurify';
+import '../../App.css'
 
 const BlogDetailsPage = () => {
   const { blogId } = useParams();
@@ -30,7 +31,7 @@ const BlogDetailsPage = () => {
 
   return (
     <main className='flex justify-center'>
-      <div className='max-w-6xl p-16'>
+      <div className='max-w-6xl p-4 md:p-16'>
         <h1 className='font-semibold text-4xl'>{blog.title}</h1>
         <p className='mt-2'>By {blog.author}</p>
         <p>{new Date(blog.createdAt).toLocaleString()}</p>

@@ -49,8 +49,8 @@ const CategoryBlogsPage = () => {
   }, [categoryName]);
 
   return (
-    <div className="max-w-6xl mx-auto flex flex-col justify-center md:flex-row gap-8">
-      <section className="full md:w-2/3 pr-8 border-r border-zinc-200 ">
+    <div className="max-w-6xl mx-auto flex flex-col justify-center  px-4 md:flex-row gap-8">
+      <section className="full md:w-2/3 mx-auto md:pr-8 border-r border-zinc-200 ">
         <h1 className="heading-font capitalize text-5xl font-bold text-blue-700 m-8">{category?.name}</h1>
         <hr className="mb-4" />
 
@@ -68,7 +68,7 @@ const CategoryBlogsPage = () => {
           </article>
         ))}
       </section>
-      <section className="full md:w-1/3 p-4">
+      <section className="full md:w-1/3 px-4 py-8 shadow-white border-t border-zinc-400 md:border-0">
         <div className="mb-8">
           <h2 className="font-serif text-xl font-bold text-slate-700 mb-4">Recent Posts</h2>
           <ul className="text-blue-700">
