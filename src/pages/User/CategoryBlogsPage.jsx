@@ -49,7 +49,7 @@ const CategoryBlogsPage = () => {
   }, [categoryName]);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+    <div className="max-w-6xl mx-auto flex flex-col justify-center md:flex-row gap-8">
       <section className="full md:w-2/3 pr-8 border-r border-zinc-200 ">
         <h1 className="heading-font capitalize text-5xl font-bold text-blue-700 m-8">{category?.name}</h1>
         <hr className="mb-4" />
