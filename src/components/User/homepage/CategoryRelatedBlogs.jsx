@@ -26,7 +26,7 @@ const CategoryRelatedBlogs = () => {
                 }
 
                 return (
-                    <div className=" max-w-6xl mx-auto px-4 py-8 border-b">
+                    <div className=" max-w-6xl mx-auto px-4 py-8 border-b border-zinc-30 last:border-0">
                         <div className="flex justify-between items-center mb-6">
                             <h2 className="text-4xl text-slate-800 font-bold title capitalize">{category.name}</h2>
                             <button

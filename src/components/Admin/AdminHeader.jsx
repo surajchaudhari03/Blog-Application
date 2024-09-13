@@ -63,18 +63,26 @@ const AdminHeader = () => {
                                 ></i>
                             </div>
                             <div className="flex flex-col space-y-4">
-                                <a href="/admin/blogs" className={styles.mobileMenu}>
-                                    Manage Blogs
-                                </a>
-                                <a href="/admin/categories" className={styles.mobileMenu}>
-                                    Manage Categories
-                                </a>
-                                <a href="/admin/queries" className={styles.mobileMenu}>
-                                    Manage Queries
-                                </a>
-                                <a href="/admin/profile" className={styles.mobileMenu} >
-                                    Profile
-                                </a>
+                                <Link to={`/admin/blogs`}>
+                                    <span className={styles.mobileMenu}>
+                                        Manage Blogs
+                                    </span>
+                                </Link>
+                                <Link to={`/admin/categories`}>
+                                    <span className={styles.mobileMenu}>
+                                        Manage Categories
+                                    </span>
+                                </Link>
+                                <Link to={`/admin/queries`}>
+                                    <span className={styles.mobileMenu}>
+                                        Manage Queries
+                                    </span>
+                                </Link>
+                                <Link to={`/admin/profile`}>
+                                    <span className={styles.mobileMenu} >
+                                        Profile
+                                    </span>
+                                </Link>
                             </div>
                         </div>
                     </>

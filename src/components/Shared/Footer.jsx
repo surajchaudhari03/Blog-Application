@@ -21,7 +21,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="w-full relative bottom-0 text-center py-4 border-t border-zinc-400 bg-gray-200">
+        <footer className="w-full relative bottom-0 text-center py-4 mt-8 border-t border-zinc-400 bg-gray-200">
             <nav className="mb-4">
                 <ul className="flex justify-center space-x-6 text-gray-400">
                     {links.map((link, index) => (

@@ -51,8 +51,8 @@ function App() {
           <Route path="/admin/profile" element={<ProfilePage />} />
         </Route>
 
-        <Route path="login" element={<LoginPage />} />
-        <Route path="register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
 
       </Routes>
     </Router>

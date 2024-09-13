@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthService from '../../services/AuthService';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BlogLogo from '../../assets/blog-logo.png';
 
 const LoginPage = () => {
@@ -49,9 +49,12 @@ const LoginPage = () => {
         </form>
         <p className="mt-4 text-center">
           Don't have an account?{' '}
-          <a href="/register" className="text-sm text-blue-400 hover:text-red-400">
-            Register Here
-          </a>
+          <Link to={`/register`}>
+            <span className="text-sm text-blue-400 hover:text-red-400">
+              Register Here
+            </span>
+          </Link>
+
         </p>
       </div>
     </div>
